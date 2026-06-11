@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReplyPilot AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    background:#020807;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    overflow:hidden;
+    position:relative;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,rgba(0,212,163,.18),transparent 70%);
+    top:-200px;
+    left:-150px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:radial-gradient(circle,rgba(0,212,163,.12),transparent 70%);
+    bottom:-150px;
+    right:-100px;
+}
+
+.card{
+    width:100%;
+    max-width:700px;
+    text-align:center;
+
+    background:rgba(255,255,255,.03);
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(0,212,163,.12);
+
+    border-radius:24px;
+
+    padding:50px 35px;
+
+    box-shadow:0 0 40px rgba(0,212,163,.08);
+
+    position:relative;
+    z-index:1;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:800;
+    color:#00D4A3;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:999px;
+
+    color:#00D4A3;
+
+    background:rgba(0,212,163,.08);
+    border:1px solid rgba(0,212,163,.15);
+
+    font-size:.85rem;
+    margin-bottom:25px;
+}
+
+h1{
+    font-size:clamp(2rem,5vw,4rem);
+    line-height:1.1;
+    margin-bottom:18px;
+}
+
+.highlight{
+    color:#00D4A3;
+}
+
+p{
+    color:#9fb1ab;
+    font-size:1rem;
+    line-height:1.7;
+    max-width:500px;
+    margin:auto;
+}
+
+.status{
+    margin-top:30px;
+    color:#00D4A3;
+    font-weight:600;
+}
+
+@media (max-width:600px){
+
+    .card{
+        padding:35px 22px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    p{
+        font-size:.92rem;
+    }
+
+    .logo{
+        font-size:1rem;
+    }
+
+    .badge{
+        font-size:.75rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="logo">REPLYPILOT AI</div>
+
+    <div class="badge">
+        Private Access
+    </div>
+
+    <h1>
+        Launching <span class="highlight">Soon</span>
+    </h1>
+
+    <p>
+        We're currently finalizing production deployment and platform optimization.
+        Public access will be available soon.
+    </p>
+
+    <div class="status">
+        ● Production Rollout In Progress
+    </div>
+
+</div>
+
+</body>
+</html>
